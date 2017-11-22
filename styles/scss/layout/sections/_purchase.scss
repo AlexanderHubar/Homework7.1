@@ -1,0 +1,12 @@
+.purchase {
+  padding: 50px 0;
+  background-color: $brand-color;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+}

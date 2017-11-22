@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+body {
+  font: 300 18px/30px "Oxygen";
+}
+@each $size in $font-sizes {
+  .font-size-#{$size} {
+    font-size: $size;
+  }
+}
+@each $font in ('Oxygen'),('Lato') {
+  .#{$font} {
+    font-family: $font;
+  }
+}
+@each $color-name, $color-hex in (white, #ffffff), (card-sub-name, #c4c4c4),
+        (search-icon-color, #85939f),(main-font-dark, #3b4954),(brand-color, #02baab), (card-text-gray, #555555) {
+  .#{$color-name} {
+    color: $color-hex;
+  }
+}
+.btn {
+  font-family: 'Oxygen';
+  font-weight: bold;
+}
+
+
+

@@ -1,0 +1,32 @@
+blockquote {
+  p {
+    padding: 0 130px;
+    margin-bottom: 15px;
+  }
+  footer {
+    text-align: center;
+  }
+  cite {
+    position: relative;
+    display: inline-block;
+  }
+  cite::before {
+    position: absolute;
+    display: block;
+    top: 15px;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 15px;
+    background-color: $brand-color;
+  }
+  &::before {
+    content: "";
+    margin-left: calc(50% - 25px);
+    display: inline-block;
+    margin-bottom: 35px;
+    background: url("../../images/marks.png") no-repeat center;
+    height: 40px;
+    width: 50px;
+  }
+}

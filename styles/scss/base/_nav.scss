@@ -1,0 +1,50 @@
+.menu {
+  li {
+    margin-left: 28px;
+  }
+  a {
+    text-decoration: none;
+  }
+  &-authentication {
+    a {
+      color: $input-icon-color;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  &-navigation {
+    li {
+      margin: 0;
+    }
+    a {
+      color: $input-icon-color;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+.navigation {
+  ul {
+    @include display-flex;
+    @include flex-wrap(wrap);
+    width: 100%;
+  }
+  li {
+    @include  display-flex;
+    @include  justify-content(center);
+    @include align-items(center);
+    position: relative;
+    min-height: 70px;
+    min-width: 100px;
+    padding: 0 10px;
+    a {
+      color: $white;
+      text-decoration: none;
+      &:hover {
+        color: $input-icon-color;
+      }
+    }
+  }
+}

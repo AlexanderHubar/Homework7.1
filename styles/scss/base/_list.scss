@@ -1,0 +1,31 @@
+.icon-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    position: relative;
+    margin-left: 60px;
+    max-width: 370px;
+    margin-bottom: 50px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+      p {
+        margin-bottom: 0;
+      }
+    }
+    &:nth-last-child(2) {
+      @extend  li:last-child;
+    }
+    h4 {
+      margin-bottom: 10px;
+    }
+    p {
+      text-align: left;
+      padding: 0;
+      line-height: 24px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@each $col in $nav-lines {
+  .navigation li:nth-child(#{$i})::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 10px;
+    background-color: $col;
+  }
+  $i: $i + 1;
+}
+@each $color in $footer-lines-color {
+  .footer-lines li:nth-child(#{$j}).line::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: -70px;
+    height: 15px;
+    background-color: $color;
+  }
+  $j: $j + 1;
+}
+.line {
+  &-light {
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      width: 50px;
+      height: 5px;
+      background-color: $line-gray;
+    }
+  }
+  &-white {
+    &::after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      margin-top: 25px;
+      width: 50px;
+      height: 5px;
+      background-color: $line-gray;
+    }
+  }
+}

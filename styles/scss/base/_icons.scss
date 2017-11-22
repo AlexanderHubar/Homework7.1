@@ -1,0 +1,82 @@
+.circle-icon {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  height: 40px;
+  width: 40px;
+  background-color: $brand-color;
+  border-radius: 50%;
+}
+.pensil::before {
+  content: "\f040";
+  padding-right: 10px;
+  font-family: fontawesome;
+}
+.user::before {
+  content: "\f2be";
+  font-family: fontawesome;
+  padding-right: 10px;
+}
+.features-icon {
+  position: absolute;
+  left: -60px;
+  font-size: 40px;
+  color: $brand-color;
+  font-family: fontawesome;
+  &-star::before {
+    @extend .features-icon;
+    content: "\f005";
+  }
+  &-cup::before {
+    @extend .features-icon;
+    content: "\f091";
+  }
+  &-magic::before {
+    @extend .features-icon;
+    content: "\f0d0";
+  }
+  &-upload::before {
+    @extend .features-icon;
+    content: "\f0ee";
+  }
+}
+.icon {
+  &-top {
+    display: flex;
+    justify-content: center;
+    font-family: fontawesome;
+    font-size: 12px;
+    &-like::before {
+      @extend .icon-top;
+      height: 20px;
+      content: "\f004";
+      color: $white;
+    }
+  }
+  &-left {
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-family: fontawesome;
+    margin-right: 10px;
+    &-like::before {
+      @extend  .icon-left;
+      content: "\f004";
+    }
+    &-comments::before {
+      @extend .icon-left;
+      content: "\f086";
+    }
+  }
+  &-circle {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #000;
+    justify-content: center;
+  }
+}

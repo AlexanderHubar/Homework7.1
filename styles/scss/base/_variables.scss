@@ -1,0 +1,26 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 930px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 930px;
+  }
+}
+:root {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 930px;
+  --breakpoint-xl: 930px;
+}
+$i: 1;
+$j: 1;
+$font-sizes: 11px, 12px, 14px, 18px, 22px, 24px, 36px, 48px, 60px;
+$font-colors: $white, $brand-color, $main-font-dark, $card-sub-name, $input-icon-color;
+$nav-lines: $yellow, $orange, $pink, $purple, $dark-purple, $dark-blue, $sky-blue;
+$footer-lines-color: $dark-purple, $sky-blue, $red, $orange;
+* {
+  outline: none;
+}
+

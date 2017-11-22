@@ -1,0 +1,19 @@
+.header {
+  &-top {
+    background-color: $header-top;
+    padding: 10px 0;
+    .row {
+      @include display-flex;
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+  }
+  &-bottom {
+    background-color: $header-bottom;
+    .row {
+      @include display-flex;
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+  }
+}

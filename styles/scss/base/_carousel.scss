@@ -1,0 +1,45 @@
+.carousel {
+  &-item {
+    height: calc(100vh - 120px);
+  }
+  .carousel-indicators {
+    bottom: 40px;
+  }
+  .jumbotron {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: transparent;
+    h1, h2 {
+      line-height: 72px;
+    }
+    h2 {
+      margin-bottom: 80px;
+    }
+    .lead {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      .btn:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  @for $i from 1 to 6 {
+    .slide-#{$i} {
+      background: url("../../images/slide-#{$i}.jpg") no-repeat center;
+      background-size: cover;
+    }
+  }
+  $i: $i + 1;
+}
+.carousel-indicators {
+  li {
+    background-color: $white;
+  }
+  .active {
+    background-color: $brand-color;
+  }
+}

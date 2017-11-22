@@ -1,0 +1,27 @@
+.input-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  min-height: 30px;
+  background-color: transparent;
+  border: 1px solid $input;
+  font: 400 12px "Lato";
+  ::-webkit-input-placeholder {color: $input-icon-color;}
+  input {
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    color: $input-icon-color;
+  }
+  &-search {
+    &::after {
+      display: block;
+      color: $input-icon-color;
+      content: "\f002";
+      font-family: fontawesome;
+    }
+  }
+}
+
+
