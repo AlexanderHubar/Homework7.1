@@ -11,8 +11,14 @@ nav {
       color: $main-font-dark !important;
   }
 }
-.gallery-navigation {
-  margin-bottom: 20px;
+.gallery{
+  @include  display-flex;
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  width: 100%;
+  &-navigation {
+    margin-bottom: 20px;
+  }
 }
 .menu {
   li {
@@ -68,5 +74,42 @@ nav {
         color: $input-icon-color;
       }
     }
+  }
+}
+.pages {
+  li {
+    padding: 0 14px;
+    display: flex;
+    &:hover {
+      background-color: $line-gray;
+    }
+    a {
+      color: $brand-color;
+      text-decoration: none;
+      font-size: 14px;
+      font-family: "Lato";
+
+    }
+    &.active {
+      a {
+        color: $main-font-dark;
+      }
+      background-color: $line-gray;
+    }
+    &.visited {
+      a {
+        color: $dark-purple;
+      }
+
+    }
+  }
+}
+.post-details {
+  li:first-child{
+    margin-left: 0;
+  }
+  a {
+    display: flex;
+    align-items: center;
   }
 }

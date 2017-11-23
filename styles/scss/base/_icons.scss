@@ -29,6 +29,29 @@
   font-family: fontawesome;
   padding-right: 10px;
 }
+.circle-comment::before {
+  padding: 0;
+  margin-right: 10px;
+  content: "\f10d";
+  font-family: fontawesome;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  color: $input-icon-color;
+  background-color: $main-font-dark;
+}
+.circle-date::before {
+  @extend .circle-comment::before;
+  content: "\f017";
+}
+.circle-user::before {
+  @extend .circle-comment::before;
+  content: "\f007";
+}
+
 .features-icon {
   position: absolute;
   left: -60px;
