@@ -1,3 +1,18 @@
 a {
   text-decoration: none;
 }
+.cart {
+  font-size: 11px;
+  color: $input-icon-color;
+  i {
+    margin-left: 10px;
+    color: $yellow;
+  }
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    i {
+      color: $white;
+    }
+  }
+}

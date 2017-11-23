@@ -1,3 +1,19 @@
+nav {
+  a {
+    position: relative;
+    padding: 0 !important;
+    margin-right: 10px;
+  }
+  .nav-link:hover {
+    color: $main-font-dark;
+  }
+  .nav-link.disabled {
+      color: $main-font-dark !important;
+  }
+}
+.gallery-navigation {
+  margin-bottom: 20px;
+}
 .menu {
   li {
     margin-left: 28px;
@@ -23,6 +39,12 @@
         color: $white;
       }
     }
+  }
+}
+.m-r{
+  li {
+    margin-left: 0;
+    margin-right: 28px;
   }
 }
 .navigation {

@@ -19,6 +19,16 @@
   font-family: fontawesome;
   padding-right: 10px;
 }
+.heart::before {
+  content: "\f08a";
+  font-family: fontawesome;
+  padding-right: 10px;
+}
+.log-out::before {
+  content: "\f08b";
+  font-family: fontawesome;
+  padding-right: 10px;
+}
 .features-icon {
   position: absolute;
   left: -60px;

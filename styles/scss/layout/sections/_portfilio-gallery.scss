@@ -1,0 +1,15 @@
+.portfolio-gallery {
+  padding-top: 0;
+  padding-bottom: 90px;
+  &-header {
+    background: url("../../images/portfolio-gallery.png") no-repeat center;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+  p {
+    line-height: 24px;
+    padding: 0;
+  }
+
+}

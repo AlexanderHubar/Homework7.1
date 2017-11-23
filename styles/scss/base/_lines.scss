@@ -33,6 +33,19 @@
       height: 5px;
       background-color: $line-gray;
     }
+    &-top {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        margin-top: 25px;
+        top: -30px;
+        width: 50px;
+        height: 5px;
+        background-color: $line-gray;
+      }
+    }
   }
   &-white {
     &::after {

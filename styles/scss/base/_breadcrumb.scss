@@ -1,0 +1,9 @@
+.breadcrumb {
+  .breadcrumb-item + .breadcrumb-item::before {
+    font-size: 16px;
+  }
+  background: transparent;
+  a {
+    color: $input-icon-color;
+  }
+}
